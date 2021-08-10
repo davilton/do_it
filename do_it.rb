@@ -54,7 +54,7 @@ def go(user_agent=nil)
   driver.quit
   puts 'Done'
 end
-%x(echo "Running: #{Time.now}" | tee -a  /home/dave/Documents/do_it/do_it.log > /dev/null)
+%x(echo "Running: #{Time.now}" | tee -a  ~/Documents/do_it/do_it.log > /dev/null)
 user_agent = 'Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148'
 go(user_agent)
 go
